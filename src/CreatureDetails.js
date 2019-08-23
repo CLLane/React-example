@@ -9,6 +9,7 @@ const CreatureDetails = ({ id, name, image, bio, type }) => {
       <h1>{name}</h1>
       <img src={image} className='app-img-no-hover'/>
       <p className='creature-bio'>{bio}</p>
+      <p>{(Math.random() * 100).toFixed(2)}% Evil</p>
     </div>
   )
 }
